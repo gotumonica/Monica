@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    color: black;
+}
+
+body {
+    background-color: #dfd3b9;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* ======= NAVBAR ======= */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(139, 149, 113, 0.8);
+    padding: 6px;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbarBtn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: rgba(97, 73, 35, 0.7);
+    transition: opacity 0.2s ease-in-out;
+}
+
+.navbarBtn:hover {
+    opacity: 0.8;
+}
+
+.navbarBtn:active {
+    opacity: 0.5;
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.button {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: rgba(97, 73, 35, 0.7);
+    transition: opacity 0.2s ease-in-out;
+    margin: 10px 0;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:active {
+    opacity: 0.5;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+.graziePapà {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.graziePapà p {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+}
+
+/* ======= MEDIA QUERIES ======= */
+@media only screen and (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        position: static;
+        gap: 8px;
+    }
+
+    .navbarBtn {
+        width: 90%;
+        max-width: 350px;
+        font-size: 14px;
+    }
+
+    .button {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .graziePapà {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .graziePapà p {
+        width: 90%;
+    }
+
+    .section {
+        padding: 20px;
+    }
+}
